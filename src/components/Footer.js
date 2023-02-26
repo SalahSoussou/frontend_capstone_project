@@ -13,7 +13,7 @@ function Footer() {
         <li>email</li>
       </ul>
       <ul>
-        Social Media Links test code
+        Social Media Links
         <li>Address</li>
         <li>Phone number</li>
         <li>email</li>
