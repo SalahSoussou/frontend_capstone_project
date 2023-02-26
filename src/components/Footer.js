@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <img src={logo} alt="logo" />
-      <Nav />
+      <Nav navStyle={"mainFooter"} />
       <ul>
         contact
         <li>Address</li>

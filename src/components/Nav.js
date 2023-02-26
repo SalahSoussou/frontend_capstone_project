@@ -1,8 +1,9 @@
 import React from "react";
+import "./Nav.sass";
 
-function Nav() {
+function Nav(props) {
   return (
-    <nav>
+    <nav className={props.navStyle}>
       <ul>
         <li>
           <a href="#menu">Home</a>

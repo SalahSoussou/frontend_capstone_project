@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <img src={logo} alt="logo" />
-      <Nav />
+      <Nav navStyle={"mainHeder"} />
     </header>
   );
 }
