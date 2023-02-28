@@ -9,7 +9,7 @@ function Nav(props) {
           <a href="#menu">Home</a>
         </li>
         <li>
-          <a href="#menu">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="#menu">Menu</a>

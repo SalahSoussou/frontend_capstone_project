@@ -1,10 +1,32 @@
 import React from "react";
 import food from "../assets/restauranfood.jpg";
-
+import salad from "../assets/greek salad.jpg";
+import bruchetta from "../assets/bruchetta.svg";
+import dessert from "../assets/lemon dessert.jpg";
+import "./Main.sass";
 const dishes = [
-  { name: "Greek salade", image: "../assets/greek salad.jpg", price: 12.99 },
-  { name: "Bruchetta", image: "../assets/bruchetta.svg", price: 5.99 },
-  { name: "Lemon dessert", image: "../assets/lemon dessert.jpg", price: 5.0 },
+  {
+    name: "Greek salade",
+    image: salad,
+    price: 12.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aut assumenda reiciendis cum, molestiae quod deserunt, laboriosam voluptatem repudiandae facilis sapiente eaque, debitis reprehenderit praesentium iure veniam nihil earum. Rerum.",
+  },
+
+  {
+    name: "Bruchetta",
+    image: bruchetta,
+    price: 5.99,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae necessitatibus quasi repudiandae molestias, ad libero eveniet aspernatur ipsam non, voluptas in obcaecati, quaerat doloremque dolor. Eius sunt iusto veritatis?",
+  },
+  {
+    name: "Lemon dessert",
+    image: dessert,
+    price: 5.0,
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eaque iusto asperiores placeat saepe esse. Odit quidem ea porro quis modi! Libero, impedit aliquam? Tempora rem vitae neque veritatis magni",
+  },
 ];
 
 function Main() {
@@ -14,9 +36,10 @@ function Main() {
   dish = card.map((e) => {
     return (
       <div>
-        <img src={e.image} alt={e.name} />
+        <img src={e.image} alt={e.name} width={200} />
         <h3>{e.name}</h3>
         <span>${e.price}</span>
+        <p>{e.description}</p>
       </div>
     );
   });
@@ -24,7 +47,7 @@ function Main() {
   return (
     <main>
       <div className="hero">
-        <div>
+        <div id="about">
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
           <p>
@@ -40,7 +63,7 @@ function Main() {
           <h1>This weeks specials!</h1>
           <button>Online Menu</button>
         </>
-        <div>{dish}</div>
+        <div id="menu">{dish}</div>
       </div>
     </main>
   );
