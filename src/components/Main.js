@@ -37,7 +37,7 @@ function Main() {
   dish = card.map((e) => {
     return (
       <div className="card" key={e.name}>
-        <img src={e.image} alt={e.name} width={200} />
+        <img src={e.image} alt={e.name} width={200} height={134} />
         <h3>{e.name}</h3>
         <span>${e.price}</span>
         <p>{e.description}</p>
