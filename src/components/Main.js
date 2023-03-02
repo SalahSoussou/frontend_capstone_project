@@ -10,7 +10,7 @@ const dishes = [
     image: salad,
     price: 12.99,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aut assumenda reiciendis cum, molestiae quod deserunt, laboriosam voluptatem repudiandae facilis sapiente eaque, debitis reprehenderit praesentium iure veniam nihil earum. Rerum.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aut assumenda reiciendis cum, molestiae quod deserunt,",
   },
 
   {
@@ -18,14 +18,14 @@ const dishes = [
     image: bruchetta,
     price: 5.99,
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae necessitatibus quasi repudiandae molestias, ad libero eveniet aspernatur ipsam non, voluptas in obcaecati, quaerat doloremque dolor. Eius sunt iusto veritatis?",
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae necessitatibus quasi repudiandae molestias, ad libero eveniet aspernatur ipsam non,?",
   },
   {
     name: "Lemon dessert",
     image: dessert,
     price: 5.0,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eaque iusto asperiores placeat saepe esse. Odit quidem ea porro quis modi! Libero, impedit aliquam? Tempora rem vitae neque veritatis magni",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eaque iusto asperiores placeat saepe esse.",
   },
 ];
 

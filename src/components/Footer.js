@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/Logo.svg";
 import Nav from "./Nav";
+import "./Footer.sass";
 function Footer() {
   return (
     <footer>
