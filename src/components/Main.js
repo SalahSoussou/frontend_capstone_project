@@ -1,5 +1,6 @@
 import React from "react";
 import food from "../assets/restauranfood.jpg";
+import restorant from "../assets/restaurant.jpg";
 import salad from "../assets/greek salad.jpg";
 import bruchetta from "../assets/bruchetta.svg";
 import dessert from "../assets/lemon dessert.jpg";
@@ -35,7 +36,7 @@ function Main() {
 
   dish = card.map((e) => {
     return (
-      <div className="card">
+      <div className="card" key={e.name}>
         <img src={e.image} alt={e.name} width={200} />
         <h3>{e.name}</h3>
         <span>${e.price}</span>
@@ -64,6 +65,20 @@ function Main() {
           <button>Online Menu</button>
         </>
         <div id="menu">{dish}</div>
+      </div>
+      <div className="info">
+        <div id="about">
+          <h1>Little Lemon</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime
+            numquam adipisci assumenda quasi a, soluta consequatur magnam
+            possimus facilis! Corrupti odio assumenda tempora alias esse
+            suscipit libero aspernatur sit!
+          </p>
+        </div>
+        <div className="restorant">
+          <img src={restorant} alt="restauran food" width={400} />
+        </div>
       </div>
     </main>
   );
