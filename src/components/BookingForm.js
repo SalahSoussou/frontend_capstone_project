@@ -37,26 +37,38 @@ function BookingForm() {
     setAvailableTimes(fetchAPI(new Date()));
   }, []);
 
+  const [booked, setBooked] = React.useState(false);
   const submitHandel = (e) => {
     e.preventDefault();
+    setBooked(!booked);
     console.log(document.getElementById("resTime").value);
   };
 
   return (
-    <form className="booking-form" onSubmit={submitHandel}>
-      <label htmlFor="res-date">Choose date</label>
-      <input type="date" id="res-date" />
-      <label htmlFor="resTime">Choose time</label>
-      <select id="resTime">{selectTime}</select>
-      <label htmlFor="guests">Number of guests</label>
-      <input type="number" placeholder="1" min="1" max="10" id="guests" />
-      <label htmlFor="occasion">Occasion</label>
-      <select id="occasion">
-        <option>Birthday</option>
-        <option>Anniversary</option>
-      </select>
-      <input type="submit" value="Make a reservation" />
-    </form>
+    <>
+      {!booked ? (
+        <form className="booking-form" onSubmit={submitHandel}>
+          <h1>Book Your Table</h1>
+          <label htmlFor="res-date">Choose date</label>
+          <input type="date" id="res-date" />
+          <label htmlFor="resTime">Choose time</label>
+          <select id="resTime">{selectTime}</select>
+          <label htmlFor="guests">Number of guests</label>
+          <input type="number" placeholder="1" min="1" max="10" id="guests" />
+          <label htmlFor="occasion">Occasion</label>
+          <select id="occasion">
+            <option>Birthday</option>
+            <option>Anniversary</option>
+          </select>
+          <input type="submit" value="Make a reservation" />
+        </form>
+      ) : (
+        <div className="booking-form">
+          <h1>Sucsess</h1>
+          <button onClick={submitHandel}>New Reservation</button>
+        </div>
+      )}
+    </>
   );
 }
 
